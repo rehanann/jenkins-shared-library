@@ -5,11 +5,11 @@ def call() {
     def bJSON = new baseJSON()
     branch = bJSON.branch_tag()
     branch.branching.each{
-        println "${it}"
+        return "${it}"
     }
 }
 
-call()
+println call()
 // branch = new testing()
 // branch = branch.branch_tag()
 // println branch
