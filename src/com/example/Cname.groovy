@@ -5,7 +5,7 @@ class Cname{
     @NonCPS
     def confFile() {
         def slurper = new groovy.json.JsonSlurperClassic()
-        def confFile = new groovy.json.JsonSlurperClassic().parse(new File('../resources/config.json'))
+        def confFile = new groovy.json.JsonSlurperClassic().parse(new File('resources/config.json'))
         return confFile
     }
 }
