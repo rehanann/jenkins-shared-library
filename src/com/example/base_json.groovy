@@ -11,7 +11,7 @@
 package com.example
 import groovy.json.JsonSlurperClassic
 
-class baseJSON{
+class Bname{
     @NonCPS
     def branch_tag() {
         def slurper = new JsonSlurper()

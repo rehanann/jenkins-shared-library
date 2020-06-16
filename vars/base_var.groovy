@@ -2,8 +2,8 @@ import com.example.*
 
 
 def call() {
-    def bJSON = new baseJSON()
-    branch = bJSON.branch_tag()
+    def b = new Bname()
+    branch = b.branch_tag()
     branch.branching.each{
         return "${it}"
     }
