@@ -5,7 +5,7 @@ def call() {
     def b = new Bname()
     branch = b.branch_tag()
     branch.branching.each{
-        return "${it}"
+        println "${it}"
     }
 }
 
