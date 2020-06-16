@@ -5,7 +5,7 @@ class Cname{
     def conf_tag() {
         def confFile = new groovy.json.JsonSlurperClassic().parse(new File('/var/lib/jenkins/workspace/jenkins-share-demo@libs/jenkins-shared-library/resources/config.json'))
             confFile.branching.each{
-            return "${it}"
+            println "${it}"
         }
     }
 }
