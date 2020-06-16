@@ -3,7 +3,7 @@ import groovy.json.JsonSlurperClassic
 class Cname{
     @NonCPS
     def conf_tag() {
-        def confFile = new groovy.json.JsonSlurperClassic().parse(new File('../resourses/config.json'))
+        def confFile = new groovy.json.JsonSlurperClassic().parse(new File('/var/lib/jenkins/workspace/jenkins-share-demo@libs/jenkins-shared-library/resources/config.json'))
             conf.branching.each{
             println "${it}"
         }
