@@ -20,7 +20,7 @@ class Dname{
         def confFile = new groovy.json.JsonSlurperClassic().parse(new File('/var/lib/jenkins/workspace/jenkins-share-demo@libs/jenkins-shared-library/resources/config.json'))
             // branch = D.myFile()
             confFile.branching.each{
-                println "${it}"
+                return "${it}"
         }
     }
 }
