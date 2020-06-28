@@ -6,7 +6,7 @@ class Cname{
     def confFile() {
         def slurper = new groovy.json.JsonSlurperClassic()
         // def DIR = new File('/var/lib/jenkins/workspace/jenkins-share-demo@libs/jenkins-shared-library/resources/')
-        string dir = 'jenkins-share-demo@libs/resources'
+        def dir = 'jenkins-share-demo@libs/resources'
         def DIR = new File("${workspace}" + "${dir}")
         def confFile = new groovy.json.JsonSlurperClassic().parse(new File(DIR, 'config.json'))
         return confFile
